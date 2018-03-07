@@ -90,12 +90,32 @@ scores[2] = 100;
 
 length 필드는 읽기 전용 필드이기 때문에 값을 바꿀 수가 없다.
 
+**1차원 배열 길이**
+
 예시)
 
 ```
 int[] Array = {"3","4","5"};
-int num = Array.length;
+int num = Array.length;// 배열의 길이 = 3
 ```
+
+**2차원 배열 길이**
+
+```
+int[][] Array = int[2][3]; // 2행 3열
+int num = Array.length; // 행의 길이 = 2
+int num1 = Array[0].length; // 0행의 열의 길이 = 3
+```
+
+**3차원 배열 길이**
+
+```
+int[][][] Array = int[3][2][3]; // 3면 2행 3열
+int num = Array.length; // 면의 길이 = 3
+int num1 = Array[0].length; // 0면의 행의 길이 = 2
+int num2 = Array[0][0].length; // 0면 0행의 열의 길이 = 3
+```
+
 
 
 #다차원 배열
